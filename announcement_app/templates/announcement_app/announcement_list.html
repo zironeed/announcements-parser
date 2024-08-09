@@ -1,0 +1,9 @@
+<h1>Список объявлений</h1>
+<ul>
+    {% for announcement in announcement_list %}
+        <li>
+            <a href="{% url 'announcement_app:detail_view' announcement.pk %}">{{ announcement.title }}</a>
+            ({{ announcement.view_count }} просмотров)
+        </li>
+    {% endfor %}
+</ul>
