@@ -1,0 +1,5 @@
+<h1>{{ announcement.title }}</h1>
+<p>Автор: {{ announcement.author }}</p>
+<p>Количество просмотров: {{ announcement.view_count }}</p>
+<p>Позиция: {{ announcement.place }}</p>
+<a href="{% url 'announcement_app:list_view' %}">Назад к списку объявлений</a>
