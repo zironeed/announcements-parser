@@ -1,1 +1,3 @@
 # announcements-parser
+
+Framework: Django
